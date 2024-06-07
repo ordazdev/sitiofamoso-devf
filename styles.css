@@ -1,22 +1,24 @@
+/* documento selctor de tipo etiqueta */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: #ffffff;
+    background-color: whitesmoke; 
+    color: black 
 }
 
+/* encabezado */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #202020;
+    background-color: #202020; 
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: red;
     text-decoration: none;
 }
 
@@ -27,16 +29,13 @@ header input[type="text"] {
     border: none;
 }
 
-.container {
-    display: flex;
-}
-
+/* navegación lateral */
 nav {
     width: 200px;
-    background-color: #202020;
+    background-color: whitesmoke; 
     padding: 20px 10px;
-    height: 100vh;
-    box-sizing: border-box;
+    height: 100vh; 
+    box-sizing: border-box; 
 }
 
 nav ul {
@@ -50,8 +49,9 @@ nav ul li {
     transition: background-color 0.3s;
 }
 
+/* Cambio de fondo al pasar el ratón */
 nav ul li:hover {
-    background-color: #383838;
+    background-color: whitesmoke;
     border-radius: 4px;
 }
 
@@ -61,35 +61,47 @@ main {
     box-sizing: border-box;
 }
 
+/* Contenedor principal selector de tipo clase */
+.container {
+    display: flex;
+}
+
+/* Cuadrícula de videos */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 20px;
 }
 
+
 .video {
-    background-color: #282828;
+    background-color: whitesmoke; 
     padding: 10px;
     border-radius: 4px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
+
 .video img {
-    max-width: 100%;
-    border-radius: 4px;
+    max-width: 100%; 
+    border-radius: 4px; 
 }
+
 
 .video p {
     margin: 10px 0 0;
 }
 
+/* Efecto al pasar el ratón sobre los videos */
 .video:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Media query  */
 @media (max-width: 768px) {
+
     nav {
         width: 100px;
     }
