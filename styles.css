@@ -64,7 +64,7 @@ body {
   }
   /* Cambio de fondo al pasar el ratón */
   nav ul li:hover {
-    background-color: whitesmoke;
+    background-color: grey;
     border-radius: 4px;
   }
   
