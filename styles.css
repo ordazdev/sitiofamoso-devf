@@ -6,6 +6,7 @@ body {
     color: black;
   }
   /* encabezado */
+  
   header {
     display: flex;
     justify-content: space-between;
